@@ -24,10 +24,10 @@ const projects = [
     title: "Modern Portfolio Website",
     description:
       "A personal portfolio website built with Next.js, Tailwind CSS, and Framer Motion. Features a modern design with smooth animations and dark mode support.",
-    image: "/projects/profport.jpg",
+    image: "/projects/profp.jpg",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
-    sourceCode: "https://github.com/PeterDiyo/portfolio",
-    liveDemo: "https://your-portfolio-url.com",
+    sourceCode: "https://github.com/PeterDiyo/Portfolio",
+    liveDemo: "https://peterdiyo.vercel.app",
   },
 ];
 
