@@ -16,16 +16,28 @@ const projects = [
     description:
       "Platform for groups: Real time communication, role based access control, authentication with Next auth, channels creation, workspaces creation, invite system/Invite codes, direct messaging, user profile, data storage and management with Convex",
     image: "/projects/teamz.jpeg",
-    technologies: ["Convex", "Next.js", "Tailwind CSS", "Shadcn-ui"],
+    technologies: [
+      "Convex",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Shadcn-ui",
+    ],
     sourceCode: "https://github.com/PeterDiyo/Teamz",
     liveDemo: "https://teamz-seven.vercel.app/",
   },
   {
     title: "Modern Portfolio Website",
     description:
-      "A personal portfolio website built with Next.js, Tailwind CSS, and Framer Motion. Features a modern design with smooth animations and dark mode support.",
+      "A personal portfolio website built with Next.js, Tailwind CSS, Framer Motion, and Convex backend to store contacts' data submission. Features a modern design with smooth animations and dark mode support.",
     image: "/projects/profp.jpg",
-    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Framer Motion"],
+    technologies: [
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Framer Motion",
+      "Convex",
+    ],
     sourceCode: "https://github.com/PeterDiyo/Portfolio",
     liveDemo: "https://peterdiyo.vercel.app",
   },
