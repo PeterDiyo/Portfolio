@@ -11,6 +11,8 @@ import {
   MailIcon,
   MapPinIcon,
 } from "lucide-react";
+import { useMutation } from "convex/react";
+import { api } from "../../../convex/_generated/api";
 
 export default function ContactPage() {
   const [ref, inView] = useInView({
@@ -29,6 +31,8 @@ export default function ContactPage() {
   const [submitStatus, setSubmitStatus] = useState<
     "idle" | "success" | "error"
   >("idle");
+
+  const submitContact = useMutation(api.contact.submitContactForm);
 
   const container = {
     hidden: { opacity: 0 },
@@ -50,10 +54,18 @@ export default function ContactPage() {
     setIsSubmitting(true);
 
     try {
-      // Add your form submission logic here
-      await new Promise((resolve) => setTimeout(resolve, 1000)); // Simulated API call
+      await submitContact({
+        name: formData.name,
+        email: formData.email,
+        subject: formData.subject,
+        message: formData.message,
+      });
+
       setSubmitStatus("success");
+      // Clear form after successful submission
+      setFormData({ name: "", email: "", subject: "", message: "" });
     } catch (error) {
+      console.error("Error submitting form:", error);
       setSubmitStatus("error");
     } finally {
       setIsSubmitting(false);
