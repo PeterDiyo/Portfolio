@@ -18,6 +18,8 @@ import {
   SiPostman,
   SiHtml5,
   SiJavascript,
+  SiPrisma,
+  SiSocketdotio,
 } from "react-icons/si";
 import Navbar from "@/components/Navbar";
 import { Database } from "lucide-react";
@@ -43,6 +45,8 @@ const skills = {
       { name: "MongoDB", icon: SiMongodb, level: 85 },
       { name: "PostgreSQL", icon: SiPostgresql, level: 80 },
       { name: "MySQL", icon: SiMysql, level: 80 },
+      { name: "Prisma ORM", icon: SiPrisma, level: 80 },
+      { name: "Socket.IO", icon: SiSocketdotio, level: 80 },
     ],
   },
   "DevOps & Tools": {
