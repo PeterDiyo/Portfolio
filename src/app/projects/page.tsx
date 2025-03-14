@@ -14,7 +14,7 @@ const projects = [
   {
     title: "Teamz",
     description:
-      "Platform for groups: Real time communication, role based access control, authentication with Next auth, channels creation, workspaces creation, invite system/Invite codes, direct messaging, user profile, data storage and management with Convex",
+      "Real time communication platform, role based access control, authentication with Next auth, channels creation, workspaces creation, invite system/Invite codes, DMs, user profile, data storage and management with Convex",
     image: "/projects/teamz.jpeg",
     technologies: [
       "Convex",
@@ -40,6 +40,22 @@ const projects = [
     ],
     sourceCode: "https://github.com/PeterDiyo/Portfolio",
     liveDemo: "https://peterdiyo.vercel.app",
+  },
+  {
+    title: "AgroHub",
+    description:
+      "A Marketing Platform for Farmers built with React, Node.js, and Express. Features secure-token-based authentication with JWT, real-time messaging with Socket.IO, and data management using MongoDB and Prisma ORM.",
+    image: "/projects/agrohub.jpg",
+    technologies: [
+      "MongoDB",
+      "Node.js ",
+      "Express",
+      "Socket.IO",
+      "Prisma ORM",
+      "React",
+    ],
+    sourceCode: "https://github.com/PeterDiyo/AgroHub",
+    liveDemo: "https://github.com/PeterDiyo/AgroHub",
   },
 ];
 
