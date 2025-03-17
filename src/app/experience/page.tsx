@@ -10,8 +10,11 @@ const experiences = [
     company: "ClarityText",
     period: "Oct 2024 - Present",
     description: [
-      "Designing and implementing ClarityText email notifications using AWS SES for email sending and AWS SNS for message fanout",
-      "Used bluefox.email for email template design",
+      "Designing scalable email notification architecture using AWS SNS for message fanout and AWS SES for reliable email delivery",
+      "Developing end-to-end email notification system with error handling, retry mechanisms, and delivery tracking",
+      "Creating customizable email templates using bluefox.email with dynamic content injection and responsive design",
+      "Implementing bounce and complaint webhooks to monitor email delivery issues and maintain sender reputation",
+      "Engineered an intuitive threaded messaging system that streamlines team communication by organizing conversations contextually, and providing real-time collaboration features - resulting in improved response times and clearer information flow. Built using Convex for the Backend, Next.js and Tailwind CSS for a polished, responsive UI with seamless thread navigation and rich message formatting",
     ],
     tech: ["Convex", "TypeScript", "Next.js", "React", "AWS", "bluefox.email"],
   },
