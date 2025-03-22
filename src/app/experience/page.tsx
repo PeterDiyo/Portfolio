@@ -16,7 +16,7 @@ const experiences = [
       "Implementing bounce and complaint webhooks to monitor email delivery issues and maintain sender reputation",
       "Engineering an intuitive threaded messaging system that streamlines team communication by organizing conversations contextually, and providing real-time collaboration features - resulting in improved response times and clearer information flow. Built using Convex for the Backend, Next.js and Tailwind CSS for a polished, responsive UI with seamless thread navigation, preview, and rich message formatting",
       "Implementing real-time emoji reactions to messages, enabling quick, and expressive feedback while fostering a more engaging team environment",
-      "Improving workspace organization with a clean, intuitive interface design to help teams easily navigate between different spaces and collaborate effectively",
+      "Polishing ClarityText UI to create a more user-friendly experience with improved visual design and simpler navigation",
     ],
     tech: ["Convex", "TypeScript", "Next.js", "React", "AWS", "bluefox.email"],
   },

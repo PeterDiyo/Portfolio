@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#2C3E50;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#34495E;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="90" fill="url(#grad)"/>
+  <path d="M100 30 A70 70 0 0 1 100 170 A70 70 0 0 1 100 30" fill="none" stroke="#E74C3C" stroke-width="6"/>
+  <text x="100" y="125" font-family="Arial, sans-serif" font-size="80" font-weight="bold" text-anchor="middle" fill="#ECF0F1">CT</text>
+</svg>

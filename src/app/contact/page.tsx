@@ -108,7 +108,7 @@ export default function ContactPage() {
 
           <motion.div
             variants={item}
-            className="mb-12 flex justify-center space-x-6"
+            className="mb-12 flex flex-wrap justify-center gap-4"
           >
             <a
               href="https://github.com/PeterDiyo"
@@ -133,6 +133,21 @@ export default function ContactPage() {
               className="group rounded-lg border border-border bg-background p-4 transition-colors hover:bg-accent"
             >
               <TwitterIcon className="h-6 w-6 text-muted-foreground transition-colors group-hover:text-foreground" />
+            </a>
+            <a
+              href="https://www.claritytext.com/u/peter-diyo-o7aw"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group flex items-center rounded-lg border border-border bg-background p-4 transition-colors hover:bg-accent sm:w-auto w-full justify-center"
+            >
+              <img
+                src="/claritytext-logo.svg"
+                alt="ClarityText"
+                className="h-6 w-6"
+              />
+              <span className="ml-2 text-sm text-muted-foreground transition-colors group-hover:text-foreground">
+                Professional profile on ClarityText
+              </span>
             </a>
           </motion.div>
 
