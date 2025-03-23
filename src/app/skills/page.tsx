@@ -20,6 +20,12 @@ import {
   SiJavascript,
   SiPrisma,
   SiSocketdotio,
+  SiGithub,
+  SiVercel,
+  SiRedux,
+  SiReactquery,
+  SiFramer,
+  SiRadixui,
 } from "react-icons/si";
 import Navbar from "@/components/Navbar";
 import { Database } from "lucide-react";
@@ -34,6 +40,10 @@ const skills = {
       { name: "Tailwind CSS", icon: SiTailwindcss, level: 90 },
       { name: "JavaScript", icon: SiJavascript, level: 90 },
       { name: "HTML/CSS", icon: SiHtml5, level: 95 },
+      { name: "Redux", icon: SiRedux, level: 85 },
+      { name: "React Query", icon: SiReactquery, level: 80 },
+      { name: "Framer Motion", icon: SiFramer, level: 80 },
+      { name: "Shadcn/Radix UI", icon: SiRadixui, level: 85 },
     ],
   },
   "Backend Development": {
@@ -55,6 +65,8 @@ const skills = {
       { name: "Docker", icon: SiDocker, level: 75 },
       { name: "AWS", icon: SiAmazon, level: 50 },
       { name: "Git", icon: SiGit, level: 90 },
+      { name: "GitHub", icon: SiGithub, level: 90 },
+      { name: "Vercel", icon: SiVercel, level: 85 },
       { name: "Postman", icon: SiPostman, level: 90 },
     ],
   },
