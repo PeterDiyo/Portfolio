@@ -80,7 +80,7 @@ export default function AboutPage() {
                   Engineer with a deep love for creating elegant solutions to
                   complex problems. My journey in software development began
                   with a curiosity about how things work, which evolved into a
-                  career building robust and scalable applications.
+                  career, building robust and scalable applications.
                 </p>
               </motion.div>
             </div>
