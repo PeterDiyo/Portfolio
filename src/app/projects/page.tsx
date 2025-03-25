@@ -150,23 +150,23 @@ export default function ProjectsPage() {
                       </span>
                     ))}
                   </div>
-                  <div className="flex space-x-4">
+                  <div className="flex flex-col sm:flex-row gap-3 sm:gap-4">
                     <a
                       href={project.sourceCode}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center space-x-2 text-sm text-muted-foreground hover:text-foreground"
+                      className="group flex-1 inline-flex items-center justify-center space-x-2 rounded-md bg-primary/5 border border-border/50 px-4 py-2.5 text-sm font-medium text-foreground/80 transition-all hover:bg-primary hover:text-primary-foreground"
                     >
-                      <CodeBracketIcon className="h-4 w-4" />
+                      <CodeBracketIcon className="h-4 w-4 text-primary/70 group-hover:text-primary-foreground" />
                       <span>Source Code</span>
                     </a>
                     <a
                       href={project.liveDemo}
                       target="_blank"
                       rel="noopener noreferrer"
-                      className="inline-flex items-center space-x-2 text-sm text-muted-foreground hover:text-foreground"
+                      className="group flex-1 inline-flex items-center justify-center space-x-2 rounded-md bg-primary/5 border border-border/50 px-4 py-2.5 text-sm font-medium text-foreground/80 transition-all hover:bg-primary hover:text-primary-foreground"
                     >
-                      <GlobeAltIcon className="h-4 w-4" />
+                      <GlobeAltIcon className="h-4 w-4 text-primary/70 group-hover:text-primary-foreground" />
                       <span>Live Demo</span>
                     </a>
                   </div>
