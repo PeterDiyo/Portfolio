@@ -6,7 +6,7 @@ A modern, responsive portfolio website built with Next.js and Tailwind CSS, feat
 
 - **Interactive UI:** Smooth animations and transitions using Framer Motion
 - **Responsive Design:** Fully responsive layout for all device sizes
-- **Dark Mode:** Built-in dark mode theme
+- **Dark Mode:** dark/light mode theme
 
 ## Technologies Use
 - **NextJs**
