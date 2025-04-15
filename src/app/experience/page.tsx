@@ -20,18 +20,15 @@ const experiences = [
     ],
     tech: ["Convex", "TypeScript", "Next.js", "React", "AWS", "bluefox.email"],
   },
-  // {
-  //   title: "Full Stack Developer",
-  //   company: "Software Agency",
-  //   period: "2020 - 2022",
-  //   description: [
-  //     "Developed and maintained multiple client projects using React and Node.js",
-  //     "Implemented responsive designs and improved website performance",
-  //     "Collaborated with design team to create intuitive user interfaces",
-  //     "Integrated third-party APIs and services",
-  //   ],
-  //   tech: ["JavaScript", "React", "Node.js", "MongoDB", "Express", "REST APIs"],
-  // },
+  {
+    title: "Software Developer",
+    company: "Club Inferno",
+    period: "Mar 2024 - Oct 2024",
+    description: [
+      "Worked on software applications for Club Inferno - The official student club for the dept of Computer Science, SRM Institute of Science and Technology",
+    ],
+    tech: ["JavaScript", "React", "Node.js", "MongoDB", "Express", "MySQL"],
+  },
 ];
 
 export default function ExperiencePage() {
