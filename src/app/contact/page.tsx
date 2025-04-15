@@ -4,13 +4,7 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { useState } from "react";
 import Navbar from "@/components/Navbar";
-import {
-  GithubIcon,
-  LinkedinIcon,
-  TwitterIcon,
-  MailIcon,
-  MapPinIcon,
-} from "lucide-react";
+import { MailIcon, MapPinIcon } from "lucide-react";
 import { useMutation } from "convex/react";
 import { api } from "../../../convex/_generated/api";
 
@@ -116,7 +110,7 @@ export default function ContactPage() {
               rel="noopener noreferrer"
               className="group rounded-lg border border-border bg-background p-4 transition-colors hover:bg-accent"
             >
-              <GithubIcon className="h-6 w-6 text-muted-foreground transition-colors group-hover:text-foreground" />
+              <img src="/github.jpg" alt="GitHub" className="h-6 w-6" />
             </a>
             <a
               href="https://www.linkedin.com/in/peter-diyo-a38451289"
@@ -124,7 +118,7 @@ export default function ContactPage() {
               rel="noopener noreferrer"
               className="group rounded-lg border border-border bg-background p-4 transition-colors hover:bg-accent"
             >
-              <LinkedinIcon className="h-6 w-6 text-muted-foreground transition-colors group-hover:text-foreground" />
+              <img src="/link.png" alt="LinkedIn" className="h-6 w-6" />
             </a>
             <a
               href="https://twitter.com/@peter_diyo"
@@ -132,7 +126,7 @@ export default function ContactPage() {
               rel="noopener noreferrer"
               className="group rounded-lg border border-border bg-background p-4 transition-colors hover:bg-accent"
             >
-              <TwitterIcon className="h-6 w-6 text-muted-foreground transition-colors group-hover:text-foreground" />
+              <img src="/xlog.avif" alt="X (Twitter)" className="h-6 w-6" />
             </a>
             <a
               href="https://www.claritytext.com/u/peter-diyo-o7aw"
