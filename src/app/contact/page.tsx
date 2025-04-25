@@ -126,7 +126,7 @@ export default function ContactPage() {
               rel="noopener noreferrer"
               className="group rounded-lg border border-border bg-background p-4 transition-colors hover:bg-accent"
             >
-              <img src="/xlog.avif" alt="X (Twitter)" className="h-6 w-6" />
+              <img src="/twitter.png" alt="X (Twitter)" className="h-6 w-6" />
             </a>
             <a
               href="https://www.claritytext.com/u/peter-diyo-o7aw"
