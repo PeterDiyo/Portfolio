@@ -27,7 +27,7 @@ const experiences = [
   {
     title: "Software Engineering Intern",
     company: "ClarityText",
-    period: "Oct 2024 - Present",
+    period: "Oct 2024 - May 2025",
     description: [
       "Architected an email notification system using AWS SNS and SES, enabling automated fanout to multiple recipients with high reliability, that successfully handles thousands of notifications daily without manual intervention.",
       "Developed end-to-end email notification system with error handling, retry mechanisms, and delivery tracking reducing undelivered messages to near 0 across multiple environments.",
