@@ -6,6 +6,25 @@ import Navbar from "@/components/Navbar";
 
 const experiences = [
   {
+    title: "Software Engineer",
+    company: "ClarityText",
+    period: "May 2025 - Present",
+    description: [
+      "Systematically identifying and resolving bugs across the frontend and backend.",
+      "Collaborating with team members to reproduce bugs, write clean patches, and verify fixes in production.",
+      "Conducting end-to-end testing of all app components to ensure functionality, reliability, and performance.",
+    ],
+    tech: [
+      "Convex",
+      "TypeScript",
+      "Next.js",
+      "React",
+      "AWS",
+      "Software Design and Development",
+      "Software Testing",
+    ],
+  },
+  {
     title: "Software Engineering Intern",
     company: "ClarityText",
     period: "Oct 2024 - Present",
