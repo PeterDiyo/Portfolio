@@ -76,13 +76,13 @@ export default function AboutPage() {
                 className="prose prose-lg dark:prose-invert"
               >
                 <p>
-                  Hello! I'm Peter Diyo. I'm a Full-stack software engineer who
-                  loves building things that solve real problems. I enjoy
-                  working in fast-paced environments where I can make an impact,
-                  whether it's implementing real-time features or designing
-                  responsive systems. What drives me is curiosity, clear
-                  problem-solving, and the chance to create products that make a
-                  difference in people's lives.
+                  I'm a Full-stack software engineer who loves building things
+                  that solve real problems. I enjoy working in fast-paced
+                  environments where I can make an impact, whether it's
+                  implementing real-time features or designing responsive
+                  systems. What drives me is curiosity, clear problem-solving,
+                  and the chance to create products that make a difference in
+                  people's lives.
                 </p>
               </motion.div>
             </div>
