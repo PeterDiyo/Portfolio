@@ -31,9 +31,12 @@ import {
   SiBootstrap,
   SiJquery,
   SiSpringboot,
+  SiExpress,
 } from "react-icons/si";
 import Navbar from "@/components/Navbar";
 import { Database } from "lucide-react";
+import { FaJava } from "react-icons/fa";
+import { VscVscode } from "react-icons/vsc";
 
 const skills = {
   "Programming Languages": {
@@ -77,7 +80,7 @@ const skills = {
       },
       {
         name: "Java",
-        icon: SiCplusplus,
+        icon: FaJava,
         docs: "https://docs.oracle.com/en/java/",
         tag: "Enterprise",
       },
@@ -136,7 +139,7 @@ const skills = {
       },
       {
         name: "VS Code",
-        icon: SiGithub,
+        icon: VscVscode,
         docs: "https://code.visualstudio.com/docs",
         tag: "Code Editor",
       },
@@ -165,7 +168,7 @@ const skills = {
       },
       {
         name: "Express",
-        icon: SiNodedotjs,
+        icon: SiExpress,
         docs: "https://expressjs.com/",
         tag: "Web Framework",
       },
