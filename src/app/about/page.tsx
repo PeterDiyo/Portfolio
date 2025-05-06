@@ -104,7 +104,7 @@ export default function AboutPage() {
               <AcademicCapIcon className="mb-4 h-8 w-8 text-primary" />
               <h3 className="mb-2 font-semibold">Education</h3>
               <p className="text-sm text-muted-foreground">
-                Computer Science student with focus on software engineering
+                Computer Science Graduate with focus on software engineering
               </p>
             </div>
 
