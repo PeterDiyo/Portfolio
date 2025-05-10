@@ -44,12 +44,18 @@ export default function Navbar() {
         {/* Mobile menu button */}
         <button
           onClick={toggleMenu}
-          className="ml-auto rounded-md p-2 text-muted-foreground hover:bg-accent hover:text-foreground md:hidden"
+          className="ml-auto flex items-center space-x-2 rounded-md p-2 text-muted-foreground hover:bg-accent hover:text-foreground md:hidden"
         >
           {isMenuOpen ? (
-            <XMarkIcon className="h-6 w-6" />
+            <>
+              <XMarkIcon className="h-4 w-4" />
+              <span className="text-sm font-medium">Close</span>
+            </>
           ) : (
-            <Bars3Icon className="h-6 w-6" />
+            <>
+              <Bars3Icon className="h-4 w-4" />
+              <span className="text-sm font-medium">Menu</span>
+            </>
           )}
         </button>
 
