@@ -12,6 +12,21 @@ import Navbar from "@/components/Navbar";
 
 const projects = [
   {
+    title: "Building E-Loop",
+    description:
+      "A smart platform that makes recycling effortless and rewarding. It helps you easily find nearby recycling centers, track your recycling progress, schedule pickups, and earn rewards, all while connecting communities and businesses to create a positive environmental impact.",
+    image: "/projects/eloop.JPG",
+    technologies: [
+      "Convex",
+      "Next.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Shadcn-ui",
+    ],
+    sourceCode: "https://github.com/PeterDiyo",
+    liveDemo: "https://e-loop-4bwj.vercel.app",
+  },
+  {
     title: "Teamz",
     description:
       "Real time communication platform, role based access control, authentication with Next auth, channels creation, workspaces creation, invite system/Invite codes, DMs, user profile, data storage and management with Convex",
