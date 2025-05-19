@@ -24,7 +24,7 @@ const projects = [
       "Shadcn-ui",
     ],
     sourceCode: "https://github.com/PeterDiyo",
-    liveDemo: "https://e-loop-4bwj.vercel.app",
+    liveDemo: "https://e-loop.vercel.app/",
   },
   {
     title: "Teamz",
