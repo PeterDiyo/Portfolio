@@ -96,7 +96,8 @@ export default function AboutPage() {
               <CodeBracketIcon className="mb-4 h-8 w-8 text-primary" />
               <h3 className="mb-2 font-semibold">Technical Expertise</h3>
               <p className="text-sm text-muted-foreground">
-                Specialized in modern web technologies and cloud architecture
+                Specialized in modern web, mobile app technologies and cloud
+                architecture
               </p>
             </div>
 
@@ -124,8 +125,8 @@ export default function AboutPage() {
             <h2 className="mb-4 text-2xl font-bold">What I Do</h2>
             <ul className="list-disc space-y-2 pl-6">
               <li>
-                Design and implement scalable web applications using modern
-                frameworks and best practices
+                Design and implement scalable web and mobile applications using
+                modern frameworks and best practices
               </li>
               <li>
                 Develop efficient backend systems and APIs with a focus on

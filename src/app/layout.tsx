@@ -14,7 +14,7 @@ const firaCode = Fira_Code({
 export const metadata: Metadata = {
   title: "Peter Diyo | Software Engineer",
   description:
-    "Full-stack software engineer specializing in modern web technologies",
+    "Full-stack software engineer specializing in modern web and mobile app technologies",
 };
 
 export default function RootLayout({

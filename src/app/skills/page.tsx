@@ -217,7 +217,14 @@ const skills = {
         name: "React",
         icon: SiReact,
         docs: "https://react.dev",
-        tag: "UI Library",
+        tag: "UI web Library",
+      },
+      {
+        name: "React Native",
+
+        icon: SiReact,
+        docs: "https://reactnative.dev/docs/getting-started",
+        tag: "UI Mobile Library",
       },
       {
         name: "Redux",
