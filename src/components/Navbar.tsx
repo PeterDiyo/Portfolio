@@ -11,6 +11,7 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/outline";
 import { useState } from "react";
+import Image from "next/image";
 
 const navItems = [
   { href: "/", label: "Home" },
@@ -36,9 +37,17 @@ export default function Navbar() {
       animate={{ y: 0 }}
       className="fixed left-0 right-0 top-0 z-50 border-b border-border/40 bg-background/95 backdrop-blur supports-[backdrop-filter]:bg-background/60"
     >
+      {" "}
       <div className="container flex h-16 items-center">
-        <Link href="/" className="flex items-center space-x-2">
-          <span className="font-mono text-xl font-bold">PD</span>
+        <Link href="/" className="flex items-center">
+          <Image
+            src="/profile.jpg"
+            alt="Profile Picture"
+            width={40}
+            height={40}
+            className="rounded-full"
+            priority
+          />
         </Link>
 
         {/* Mobile menu button */}
@@ -48,13 +57,13 @@ export default function Navbar() {
         >
           {isMenuOpen ? (
             <>
-              <XMarkIcon className="h-4 w-4" />
-              <span className="text-sm font-medium">Close</span>
+              <XMarkIcon className="h-5 w-5" />
+              <span className="text-md font-medium">Close</span>
             </>
           ) : (
             <>
-              <Bars3Icon className="h-4 w-4" />
-              <span className="text-sm font-medium">Menu</span>
+              <Bars3Icon className="h-5 w-5" />
+              <span className="text-md font-medium">Menu</span>
             </>
           )}
         </button>
