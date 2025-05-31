@@ -43,8 +43,8 @@ export default function Navbar() {
           <Image
             src="/profile.jpg"
             alt="Profile Picture"
-            width={40}
-            height={40}
+            width={35}
+            height={35}
             className="rounded-full"
             priority
           />
