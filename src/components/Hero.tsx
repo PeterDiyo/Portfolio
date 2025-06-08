@@ -18,16 +18,13 @@ export default function Hero() {
         staggerChildren: 0.3,
       },
     },
-  };
-
-  const item = {
+  };  const item = {
     hidden: { opacity: 0, y: 20 },
     show: { opacity: 1, y: 0 },
   };
-
   const [text, setText] = useState("");
   const [isTypingComplete, setIsTypingComplete] = useState(false);
-  const fullText = "Building elegant solutions to complex problems";
+  const fullText = "Building real world solutions through code";
 
   useEffect(() => {
     let currentIndex = 0;
