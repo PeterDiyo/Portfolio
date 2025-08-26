@@ -10,6 +10,8 @@ const experiences = [
     company: "ClarityText",
     period: "May 2025 - Present",
     description: [
+      "Led the migration from Quill to Tiptap rich text editor, enabling advanced customization, modern UI integration, and improved mobile responsiveness. This transition enhanced the user experience and editor performance across all devices.",
+      "Implemented Direct Reply feature to Messages with message quote, and smooth scroll to the replied message in conversation view, enhancing user interaction and context in conversations.",
       "Systematically identifying and resolving bugs across the frontend and backend.",
       "Collaborating with team members to reproduce bugs, write clean patches, and verify fixes in production.",
       "Conducting end-to-end testing of all app components to ensure functionality, reliability, and performance.",

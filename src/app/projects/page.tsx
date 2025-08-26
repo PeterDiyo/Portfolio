@@ -45,7 +45,7 @@ const projects = [
     title: "SeatFinder Zambia",
     description:
       "Allowing students to simply submit their student ID, Exam Session (FN/ANs), and exam date during exams, and instantly view their allocated seat (building name, room number, exam date and time, and seat number).",
-    image: "/projects/seatfinder.jpg",
+    image: "/projects/seatfinder.JPG",
     technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Convex"],
     sourceCode: "https://github.com/PeterDiyo/seatfinder",
     liveDemo: "https://seatfinder-dit.vercel.app/",
