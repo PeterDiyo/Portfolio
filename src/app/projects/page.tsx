@@ -42,6 +42,15 @@ const projects = [
     liveDemo: "https://teamz-seven.vercel.app/",
   },
   {
+    title: "SeatFinder Zambia",
+    description:
+      "Allowing students to simply submit their student ID, Exam Session (FN/ANs), and exam date during exams, and instantly view their allocated seat (building name, room number, exam date and time, and seat number).",
+    image: "/projects/seatfinder.jpg",
+    technologies: ["Next.js", "TypeScript", "Tailwind CSS", "Convex"],
+    sourceCode: "https://github.com/PeterDiyo/seatfinder",
+    liveDemo: "https://seatfinder-dit.vercel.app/",
+  },
+  {
     title: "Modern Portfolio Website",
     description:
       "A personal portfolio website built with Next.js, Tailwind CSS, Framer Motion, and Convex backend to store contacts' data submission. Features a modern design with smooth animations and dark mode support.",
@@ -56,6 +65,7 @@ const projects = [
     sourceCode: "https://github.com/PeterDiyo/Portfolio",
     liveDemo: "https://peterdiyo.vercel.app",
   },
+
   {
     title: "AgroHub",
     description:
