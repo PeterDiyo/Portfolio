@@ -75,11 +75,10 @@ export default function Navbar() {
               <Link
                 key={item.href}
                 href={item.href}
-                className={`relative text-sm font-medium transition-colors hover:text-foreground/80 ${
-                  pathname === item.href
-                    ? "text-foreground"
-                    : "text-foreground/60"
-                }`}
+                className={`relative text-sm font-medium transition-colors hover:text-foreground/80 ${pathname === item.href
+                  ? "text-foreground"
+                  : "text-foreground/60"
+                  }`}
               >
                 {pathname === item.href && (
                   <motion.span
@@ -118,11 +117,10 @@ export default function Navbar() {
                   key={item.href}
                   href={item.href}
                   onClick={() => setIsMenuOpen(false)}
-                  className={`text-sm font-medium transition-colors hover:text-foreground/80 ${
-                    pathname === item.href
-                      ? "text-foreground"
-                      : "text-foreground/60"
-                  }`}
+                  className={`text-sm font-medium transition-colors hover:text-foreground/80 ${pathname === item.href
+                    ? "text-foreground"
+                    : "text-foreground/60"
+                    }`}
                 >
                   {item.label}
                 </Link>

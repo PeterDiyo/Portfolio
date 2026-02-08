@@ -4,9 +4,11 @@ import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import Image from "next/image";
 import {
-  CodeBracketIcon,
-  AcademicCapIcon,
+  CpuChipIcon,
+  CloudIcon,
   BriefcaseIcon,
+  CodeBracketIcon,
+  Cog6ToothIcon,
 } from "@heroicons/react/24/outline";
 import Navbar from "@/components/Navbar";
 
@@ -46,7 +48,7 @@ export default function AboutPage() {
             <div className="inline-block rounded-lg bg-editor-background px-3 py-1 font-mono text-sm text-editor-text">
               <span className="text-[#569CD6]">class</span>{" "}
               <span className="text-[#4EC9B0]">About</span>{" "}
-              <span className="text-[#D4D4D4]">{}</span>
+              <span className="text-[#D4D4D4]">{ }</span>
             </div>
           </motion.div>
 
@@ -54,7 +56,7 @@ export default function AboutPage() {
             <motion.div variants={item} className="mb-8 md:mb-0 md:w-1/3">
               <div className="relative h-64 w-64 overflow-hidden rounded-full">
                 <Image
-                  src="/profile.jpg"
+                  src="/Peter_diyo_sma.jpg"
                   alt="Peter Diyo"
                   fill
                   className="object-cover"
@@ -76,13 +78,14 @@ export default function AboutPage() {
                 className="prose prose-lg dark:prose-invert"
               >
                 <p>
-                  I'm a Full-stack software engineer who loves building things
-                  that solve real problems. I enjoy working in fast-paced
-                  environments where I can make an impact, whether it's
-                  implementing real-time features or designing responsive
-                  systems. What drives me is curiosity, clear problem-solving,
-                  and the chance to create products that make a difference in
-                  people's lives.
+                  I'm a Software Engineer with a strong focus on Full Stack, Cloud and
+                  DevOps - building scalable systems, reliable infrastructure, and
+                  shipping products that users depend on. I thrive in
+                  high-impact environments where ownership, operational
+                  excellence, and clean engineering matter. Whether it's
+                  full-stack development, cloud architecture, or improving
+                  CI/CD and observability, I'm driven by solving hard problems
+                  and raising the bar for quality and velocity.
                 </p>
               </motion.div>
             </div>
@@ -94,26 +97,30 @@ export default function AboutPage() {
           >
             <div className="rounded-lg border border-border bg-card p-6">
               <CodeBracketIcon className="mb-4 h-8 w-8 text-primary" />
-              <h3 className="mb-2 font-semibold">Technical Expertise</h3>
+              <h3 className="mb-2 font-semibold">Software Engineering</h3>
+              <ul className="text-sm text-muted-foreground space-y-1 list-disc list-inside">
+                <li>Full-stack development</li>
+                <li>System design</li>
+                <li>Scalable applications</li>
+                <li>Modern frameworks</li>
+              </ul>
+            </div>
+
+            <div className="rounded-lg border border-border bg-card p-6">
+              <CloudIcon className="mb-4 h-8 w-8 text-primary" />
+              <h3 className="mb-2 font-semibold">Cloud Engineering</h3>
               <p className="text-sm text-muted-foreground">
-                Specialized in modern web, mobile app technologies and cloud
-                architecture
+                Cloud architecture, infrastructure as code, and designing
+                reliable, cost-effective systems at scale
               </p>
             </div>
 
             <div className="rounded-lg border border-border bg-card p-6">
-              <AcademicCapIcon className="mb-4 h-8 w-8 text-primary" />
-              <h3 className="mb-2 font-semibold">Education</h3>
+              <Cog6ToothIcon className="mb-4 h-8 w-8 text-primary" />
+              <h3 className="mb-2 font-semibold">DevOps & SRE</h3>
               <p className="text-sm text-muted-foreground">
-                Computer Science Graduate with focus on software engineering
-              </p>
-            </div>
-
-            <div className="rounded-lg border border-border bg-card p-6">
-              <BriefcaseIcon className="mb-4 h-8 w-8 text-primary" />
-              <h3 className="mb-2 font-semibold">Experience</h3>
-              <p className="text-sm text-muted-foreground">
-                1+ years of professional software development experience
+                CI/CD pipelines, observability, automation, and improving
+                deployment velocity and system reliability
               </p>
             </div>
           </motion.div>
@@ -125,29 +132,29 @@ export default function AboutPage() {
             <h2 className="mb-4 text-2xl font-bold">What I Do</h2>
             <ul className="list-disc space-y-2 pl-6">
               <li>
-                Design and implement scalable web and mobile applications using
-                modern frameworks and best practices
+                Design and ship full-stack applications with a focus on
+                scalability, performance, and maintainability
               </li>
               <li>
-                Develop efficient backend systems and APIs with a focus on
-                performance and security
+                Build and operate cloud-native infrastructure - reliable, secure,
+                and cost-conscious
               </li>
               <li>
-                Create intuitive user interfaces with attention to detail and
-                user experience
+                Own CI/CD, monitoring, and automation to increase deployment
+                velocity and system reliability
               </li>
               <li>
-                Collaborate with cross-functional teams to deliver high-quality
-                software solutions
+                Work with cross-functional teams to deliver high-impact products
+                and raise the engineering bar
               </li>
             </ul>
 
-            <h2 className="mb-4 mt-8 text-2xl font-bold">Core Values</h2>
+            <h2 className="mb-4 mt-8 text-2xl font-bold">What I Care About</h2>
             <ul className="list-disc space-y-2 pl-6">
-              <li>Clean, maintainable, and well-documented code</li>
-              <li>User-centered design and development</li>
-              <li>Continuous learning and improvement</li>
-              <li>Effective communication and collaboration</li>
+              <li>Ownership and operational excellence - building systems that hold up in production</li>
+              <li>Clear, maintainable code and thoughtful system design</li>
+              <li>Bias for action and shipping - iterating quickly without sacrificing quality</li>
+              <li>Collaboration and high standards - learning from others and raising the bar</li>
             </ul>
           </motion.div>
 

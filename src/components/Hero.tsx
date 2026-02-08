@@ -2,7 +2,7 @@
 
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 export default function Hero() {
   const [ref, inView] = useInView({
@@ -18,28 +18,55 @@ export default function Hero() {
         staggerChildren: 0.3,
       },
     },
-  };  const item = {
+  }; const item = {
     hidden: { opacity: 0, y: 20 },
     show: { opacity: 1, y: 0 },
   };
-  const [text, setText] = useState("");
-  const [isTypingComplete, setIsTypingComplete] = useState(false);
-  const fullText = "Building real world solutions through code";
+
+  const titles = [
+    "Software Engineer",
+    "Cloud Engineering",
+    "DevOps Engineering",
+  ];
+  const [displayText, setDisplayText] = useState("");
+  const [phraseIndex, setPhraseIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+  const [isPaused, setIsPaused] = useState(false);
+  const unpauseTimeoutRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   useEffect(() => {
-    let currentIndex = 0;
-    const typingInterval = setInterval(() => {
-      if (currentIndex <= fullText.length) {
-        setText(fullText.slice(0, currentIndex));
-        currentIndex++;
-      } else {
-        setIsTypingComplete(true);
-        clearInterval(typingInterval);
-      }
-    }, 50);
+    const currentPhrase = titles[phraseIndex];
+    const typeSpeed = isDeleting ? 30 : 80;
+    const pauseAtEnd = 2000;
+    const pauseBetweenPhrases = 600;
 
-    return () => clearInterval(typingInterval);
-  }, []);
+    if (isPaused) return;
+
+    if (!isDeleting && displayText === currentPhrase) {
+      const id = setTimeout(() => setIsDeleting(true), pauseAtEnd);
+      return () => clearTimeout(id);
+    }
+    if (isDeleting && displayText === "") {
+      setIsDeleting(false);
+      setPhraseIndex((i) => (i + 1) % titles.length);
+      setIsPaused(true);
+      if (unpauseTimeoutRef.current) clearTimeout(unpauseTimeoutRef.current);
+      unpauseTimeoutRef.current = setTimeout(() => {
+        setIsPaused(false);
+        unpauseTimeoutRef.current = null;
+      }, pauseBetweenPhrases);
+      return;
+    }
+
+    const id = setTimeout(() => {
+      setDisplayText(
+        isDeleting
+          ? currentPhrase.slice(0, displayText.length - 1)
+          : currentPhrase.slice(0, displayText.length + 1)
+      );
+    }, typeSpeed);
+    return () => clearTimeout(id);
+  }, [displayText, phraseIndex, isDeleting, isPaused]);
 
   return (
     <section className="relative flex min-h-screen items-center justify-center py-20">
@@ -62,19 +89,17 @@ export default function Hero() {
 
           <motion.h1
             variants={item}
-            className="mb-6 font-mono text-4xl font-bold leading-tight tracking-tight md:text-6xl"
+            className="mb-6 min-h-[1.2em] font-mono text-4xl font-bold leading-tight tracking-tight md:text-6xl"
           >
-            Full-Stack Software Engineer
+            {displayText}
+            <span className="ml-0.5 inline-block h-[0.9em] w-0.5 animate-blink bg-primary align-middle" />
           </motion.h1>
 
           <motion.p
             variants={item}
-            className="mb-8 h-6 text-lg text-foreground/80 md:text-xl"
+            className="mb-8 text-lg text-foreground/80 md:text-xl"
           >
-            {text}
-            {!isTypingComplete && (
-              <span className="ml-1 inline-block h-5 w-2 animate-blink bg-primary" />
-            )}
+            // Empowering ideas with code - building scalable, meaningful solutions for the real world.
           </motion.p>
 
           <motion.div variants={item} className="space-x-4">
