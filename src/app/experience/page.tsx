@@ -10,6 +10,11 @@ const experiences = [
     company: "ClarityText",
     period: "May 2025 - Present",
     description: [
+      "Implemented custom Link Unfurling for ClarityText's Messages, threads, SEO optimized articles, and space channels, enabling rich social previews (X, Discord, iMessage, and more) that display dynamic metadata like thread titles and space banners, and message content. This directly supports the platform mission of creating an open-access knowledge base by making conversations publicly viewable without requiring a sign-in.",
+      "Improving application reliability through targeted bug resolution and design refinement across the full stack.",
+      "Leading UI/UX development (designed a professional mobile web UI, Profile page UI design), dark mode feature, professional url sharing previews for channels, threads, and messages.",
+      "Improved the inconsistent backend channel reordering logic using the Lexorank algorithm.",
+      "Wrote backend queries and mutations using Convex DB and framework, achieving 100% data sync",
       "Led the migration from Quill to Tiptap rich text editor, enabling advanced customization, modern UI integration, and improved mobile responsiveness. This transition enhanced the user experience and editor performance across all devices.",
       "Implemented Direct Reply feature to Messages with message quote, and smooth scroll to the replied message in conversation view, enhancing user interaction and context in conversations.",
       "Systematically identifying and resolving bugs across the frontend and backend.",
@@ -108,23 +113,20 @@ export default function ExperiencePage() {
               <motion.div
                 key={index}
                 variants={item}
-                className={`mb-12 md:flex ${
-                  index % 2 === 0 ? "md:flex-row-reverse" : ""
-                }`}
+                className={`mb-12 md:flex ${index % 2 === 0 ? "md:flex-row-reverse" : ""
+                  }`}
               >
                 <div className="md:w-1/2">
                   <div
-                    className={`relative rounded-lg border border-border bg-card p-6 ${
-                      index % 2 === 0 ? "md:ml-8" : "md:mr-8"
-                    }`}
+                    className={`relative rounded-lg border border-border bg-card p-6 ${index % 2 === 0 ? "md:ml-8" : "md:mr-8"
+                      }`}
                   >
                     {/* Timeline dot */}
                     <div
-                      className={`absolute top-6 h-4 w-4 rounded-full border-4 border-background bg-primary ${
-                        index % 2 === 0
+                      className={`absolute top-6 h-4 w-4 rounded-full border-4 border-background bg-primary ${index % 2 === 0
                           ? "left-0 -translate-x-1/2 md:left-auto md:right-0 md:translate-x-1/2"
                           : "left-0 -translate-x-1/2"
-                      }`}
+                        }`}
                     />
 
                     <h3 className="mb-1 text-lg font-semibold">{exp.title}</h3>
