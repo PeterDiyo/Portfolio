@@ -60,7 +60,7 @@ const skills = {
   "Cloud & DevOps": {
     description: "Cloud platforms, containers, and CI/CD",
     skills: [
-      { name: "AWS", icon: SiAmazon, docs: "https://docs.aws.amazon.com", tag: "SNS, SES, EC2, IAM, Amplify" },
+      { name: "AWS", icon: SiAmazon, docs: "https://docs.aws.amazon.com", tag: "EC2, S3, RDS, Lambda, VPC, IAM, Amplify, SNS, SES" },
       { name: "Docker", icon: SiDocker, docs: "https://docs.docker.com", tag: "Containers" },
       { name: "Kubernetes", icon: SiKubernetes, docs: "https://kubernetes.io/docs", tag: "Orchestration" },
       { name: "GitHub Actions", icon: SiGithubactions, docs: "https://docs.github.com/en/actions", tag: "CI/CD" },
