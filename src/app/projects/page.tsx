@@ -11,8 +11,24 @@ import {
 import Navbar from "@/components/Navbar";
 
 const projects = [
+   {
+    title: "TextractFlow",
+    description:
+      "AI-powered, serverless receipt processing pipeline built on AWS that automatically processes uploaded receipts, extracts structured data using AI, stores and organizes data in a database, and sends real-time email summaries",
+    image: "/projects/TextractFlow.drawio.png",
+    technologies: [
+      "AWS Lambda",
+      "IAM",
+      "AWS Textract",
+      "AWS S3",
+      "DynamoDB",
+      "AWS SES",
+    ],
+    sourceCode: "https://github.com/PeterDiyo/AWS-Projects/blob/main/TextractFlow/README.md",
+    liveDemo: "https://github.com/PeterDiyo/AWS-Projects/blob/main/TextractFlow/README.md",
+  },
   {
-    title: "Building E-Loop",
+    title: "E-Loop",
     description:
       "A smart platform that makes recycling effortless and rewarding. It helps you easily find nearby recycling centers, track your recycling progress, schedule pickups, and earn rewards, all while connecting communities and businesses to create a positive environmental impact.",
     image: "/projects/eloop.JPG",
