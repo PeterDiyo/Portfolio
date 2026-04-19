@@ -12,6 +12,21 @@ import Navbar from "@/components/Navbar";
 
 const projects = [
    {
+    title: "Serverless Email Marketing App",
+    description:
+      "An event-driven email marketing system built using AWS EventBridge, Lambda, S3, IAM, and SES. This project demonstrates how to design a scalable, automated email pipeline using serverless architecture.",
+    image: "/projects/Email-market.png",
+    technologies: [
+      "AWS Lambda",
+      "IAM",
+      "EventBridge",
+      "AWS S3",
+      "AWS SES",
+    ],
+    sourceCode: "https://github.com/PeterDiyo/AWS-Projects/blob/main/serverless-email-marketing-app/README.md",
+    liveDemo: "https://github.com/PeterDiyo/AWS-Projects/blob/main/serverless-email-marketing-app/README.md",
+  },
+   {
     title: "TextractFlow",
     description:
       "AI-powered, serverless receipt processing pipeline built on AWS that automatically processes uploaded receipts, extracts structured data using AI, stores and organizes data in a database, and sends real-time email summaries",
